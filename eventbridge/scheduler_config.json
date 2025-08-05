@@ -1,0 +1,16 @@
+{
+  "Name": "WeeklyClusterReboot",
+  "Description": "Calls a Lambda function that reboots all RDS and DocumentDB clusters weekly.",
+  "ScheduleExpression": "rate(7 days)",
+  "ScheduleExpressionTimezone": "Asia/Singapore",
+  "StartDate": "2025-07-13T00:00:00Z",
+  "FlexibleTimeWindow": {
+    "Mode": "OFF"
+  },
+  "State": "ENABLED",
+  "Target": {
+    "Arn": "arn:aws:lambda:ap-southeast-2:xxxxxxxxxxxx:function:AutoStopClusters",
+    "RoleArn": "arn:aws:iam::xxxxxxxxxxxx:role/Amazon_EventBridge_Scheduler_LAMBDA_AutoStopClusters"
+  },
+  "GroupName": "default"
+}

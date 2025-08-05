@@ -1,0 +1,37 @@
+
+---
+
+### ✅ `.gitignore`
+
+```gitignore
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+*.egg-info/
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# AWS CLI / Credentials
+*.pem
+*.key
+*.crt
+.aws/
+
+# Output logs or test artifacts
+*.log
+*.out
+*.tmp
+*.zip
+
+# Terraform or infra state (if added later)
+*.tfstate
+*.tfstate.backup
+.terraform/
