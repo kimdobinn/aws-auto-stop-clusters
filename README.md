@@ -30,10 +30,7 @@ RDS and DocumentDB clusters incur unnecessary costs when left running. Even afte
 - **AWS IAM**: Manages fine-grained roles and policies for secure execution.
 - **CloudWatch Logs**: Monitors and debugs Lambda execution.
 
----
-
-## Folder Structure
-
+```text
 aws-auto-stop-clusters/
 ├── lambda/
 │   └── auto_stop_clusters.py                  # Main Lambda function
@@ -50,8 +47,7 @@ aws-auto-stop-clusters/
 │       └── LambdaTrustPolicy.json
 ├── .gitignore
 └── README.md
-
----
+```
 
 ## Notes
 
