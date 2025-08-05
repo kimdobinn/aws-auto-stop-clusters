@@ -34,7 +34,22 @@ RDS and DocumentDB clusters incur unnecessary costs when left running. Even afte
 
 ## Folder Structure
 
-<pre><code>```text aws-auto-stop-clusters/ ├── lambda/ │ └── auto_stop_clusters.py # Main Lambda function ├── eventbridge/ │ └── scheduler_config.json # JSON export of EventBridge Scheduler config ├── iam/ │ ├── EventBridgeSchedulerExecutionPolicy.json │ ├── LambdaInvokePolicy.json │ └── LambdaStopDBPolicy.json ├── terraform/ │ ├── eventbridge_schedule.tf │ └── trust_relationships/ │ ├── EventBridgeTrustPolicy.json │ └── LambdaTrustPolicy.json ├── .gitignore └── README.md ``` </code></pre>
+aws-auto-stop-clusters/
+├── lambda/
+│   └── auto_stop_clusters.py                  # Main Lambda function
+├── eventbridge/
+│   └── scheduler_config.json                  # JSON export of EventBridge Scheduler config
+├── iam/
+│   ├── EventBridgeSchedulerExecutionPolicy.json
+│   ├── LambdaInvokePolicy.json
+│   └── LambdaStopDBPolicy.json
+├── terraform/
+│   ├── eventbridge_schedule.tf
+│   └── trust_relationships/
+│       ├── EventBridgeTrustPolicy.json
+│       └── LambdaTrustPolicy.json
+├── .gitignore
+└── README.md
 
 ---
 
